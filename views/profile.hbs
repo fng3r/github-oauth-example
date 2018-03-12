@@ -1,0 +1,9 @@
+<p><a href="/">Home</a></p>
+<dl>
+    <dt>ID: </dt><dd>{{ user.id }}</dd>
+    <dt>Username: </dt><dd>{{ user.username }}</dd>
+    <dt>Name: </dt><dd>{{ user.displayName }}</dd>
+    {{#if user.emails}}
+        <dt>Email: </dt><dd>{{ user.emails.0.value }}</dd>
+    {{/if}}
+</dl>
